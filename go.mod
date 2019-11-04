@@ -4,9 +4,11 @@ go 1.12
 
 require (
 	github.com/appscode/go v0.0.0-20191119085241-0887d8ec2ecc
+	github.com/codeskyblue/go-sh v0.0.0-20190412065543-76bd3d59ff27
 	github.com/fatih/camelcase v1.0.0
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/spf13/cobra v0.0.5
+	go.mongodb.org/mongo-driver v1.3.3
 	k8s.io/api v0.0.0-20191122220107-b5267f2975e0
 	k8s.io/apimachinery v0.16.5-beta.1
 	k8s.io/cli-runtime v0.0.0-20191114110141-0a35778df828

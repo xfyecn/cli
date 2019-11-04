@@ -21,6 +21,8 @@ import (
 	"fmt"
 	"io"
 
+	"kubedb.dev/cli/pkg/databases"
+
 	v "github.com/appscode/go/version"
 	"github.com/spf13/cobra"
 	"k8s.io/cli-runtime/pkg/genericclioptions"
@@ -75,6 +77,7 @@ func NewKubeDBCommand(in io.Reader, out, err io.Writer) *cobra.Command {
 	}
 	groups.Add(rootCmd)
 	templates.ActsAsRootCommand(rootCmd, nil, groups...)
+	databases.AddDatabaseCMDs(rootCmd)
 
 	return rootCmd
 }
